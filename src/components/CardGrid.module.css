@@ -6,15 +6,15 @@
 }
 
 .primary-slot {
-  flex-grow: 3;
-  background-color: green;
+  /* background-color: green; */
   display: flex;
+  width: 66.6%;
 }
 
 .stacked-slot {
-  flex-grow: 1;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   display: flex;
   flex-direction: column;
   gap: 1vw;
+  width: 33.3%;
 }
