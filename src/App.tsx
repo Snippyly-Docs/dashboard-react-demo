@@ -6,6 +6,7 @@ import styles from './App.module.css';
 import Layout from './components/Layout';
 import Toolbar from './components/Toolbar';
 import CardGrid from './components/CardGrid';
+import Section from './components/Section';
 
 const App = () => {
 
@@ -24,20 +25,38 @@ const App = () => {
     <Layout
       navbar={
         <>
-
         </>
       }
       content={
         <>
           <Toolbar />
-          <div className={styles['section']}>
-            <h1>Dashboard</h1>
-            <CardGrid />
-          </div>
-          <div className={styles['section']}>
-            <h2>Recent transactions</h2>
-            <CardGrid style={{height: '100%'}} />
-          </div>
+          <Section content={
+            <>
+              <h1>Dashboard</h1>
+              <CardGrid primary={
+                <div className={styles.card}>
+
+                </div>
+              }
+                secondary={
+                  <>
+                    <div className={styles.card}>
+
+                    </div>
+                    <div className={styles.card}>
+
+                    </div>
+                  </>
+                }
+              />
+            </>
+          } />
+          <Section content={
+            <>
+              <h2>Recent transactions</h2>
+              <CardGrid style={{ height: '100%' }} />
+            </>
+          } />
         </>
       } />
   );

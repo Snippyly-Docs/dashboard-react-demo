@@ -1,0 +1,11 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  height: 100%;
+  flex: 8;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}

@@ -1,15 +1,20 @@
 .card-grid-container {
-  width: 100%;
   display: flex;
   height: 45.67vh;
+  gap: 1vw;
+  padding: 1vw;
 }
 
 .primary-slot {
   flex-grow: 3;
   background-color: green;
+  display: flex;
 }
 
 .stacked-slot {
   flex-grow: 1;
   background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
