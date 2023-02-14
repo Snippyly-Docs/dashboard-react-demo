@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
+import GraphIcon from './icons/graph.svg';
+import TrendIcon from './icons/trend.svg';
 
 import Layout from './components/Layout';
 import Toolbar from './components/Toolbar';
@@ -9,6 +11,7 @@ import CardGrid from './components/CardGrid';
 import Section from './components/Section';
 import Card from './components/Card';
 import Chart from './components/Chart';
+import Table from './components/Table';
 
 const App = () => {
 
@@ -43,10 +46,34 @@ const App = () => {
                 secondary={
                   <>
                     <Card content={
-                      <></>
+                      <div className={styles['metrics-container']}>
+                        <div className={styles['metrics-header']}>
+                          <div className={styles['icon']}>
+                            <img src={GraphIcon} />
+                          </div>
+                          <div className={styles['trend']}>
+                            <p className={styles['trend-value']}>4.56</p>
+                            <img src={TrendIcon} />
+                          </div>
+                        </div>
+                        <p className={styles['label']}>Total revenue</p>
+                        <p className={styles['value']}>500K</p>
+                      </div>
                     } />
                     <Card content={
-                      <></>
+                      <div className={styles['metrics-container']}>
+                        <div className={styles['metrics-header']}>
+                          <div className={styles['icon']}>
+                            <img src={GraphIcon} />
+                          </div>
+                          <div className={styles['trend']}>
+                            <p className={styles['trend-value']}>3.26</p>
+                            <img src={TrendIcon} />
+                          </div>
+                        </div>
+                        <p className={styles['label']}>Views</p>
+                        <p className={styles['value']}>20K</p>
+                      </div>
                     } />
                   </>
                 }
@@ -58,26 +85,7 @@ const App = () => {
               <h2>Recent transactions</h2>
               <CardGrid style={{ height: '100%' }}
                 primary={
-                  <table className={styles['table']}>
-                    <tr className={styles['header']}>
-                      <th><span className="responsive-text">Name</span></th>
-                      <th><span className="responsive-text">Date</span></th>
-                      <th><span className="responsive-text">Amount</span></th>
-                      <th><span className="responsive-text">Status</span></th>
-                    </tr>
-                    <tr className={styles['row']}>
-                      <td><span className="responsive-text">Loreal</span></td>
-                      <td><span className="responsive-text">Jan 11</span></td>
-                      <td><span className="responsive-text">$5000</span></td>
-                      <td><span className="responsive-text">Success</span></td>
-                    </tr>
-                    <tr className={styles['row']}>
-                      <td><span className="responsive-text">J&J</span></td>
-                      <td><span className="responsive-text">Jan 11</span></td>
-                      <td><span className="responsive-text">$7000</span></td>
-                      <td><span className="responsive-text">Success</span></td>
-                    </tr>
-                  </table>
+                  <Table />
                 }
               />
             </>
