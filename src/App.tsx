@@ -22,32 +22,37 @@ const App = () => {
   return (
     <div className={styles['app-container']}>
       <div className={styles['sidebar']}>
-        
+
       </div>
       <div className={styles['content']}>
         <div className={styles['toolbar']}>
           Toolbar
         </div>
-        <div className={styles['dashboard']}>
-          <h1>Dashboard</h1>
-          <div className={styles['cards']}>
-            <div className={styles['hero-card']}>
-              <Card content={
-                <Chart />
-              } />
-            </div>
-            <div className={styles['card-stack']}>
-              <Card content={
-                <div className={styles['header']}></div>
+        <h1 className={styles['padding']}>Dashboard</h1>
+        <div className={`${styles['dashboard']} ${styles['padding']}`}>
+          <div className={styles['main-content']}>
+            <div className={styles['layout']}>
+              <div className={styles['hero-card']}>
+                <Card content={
+                  <Chart />
+                } />
+              </div>
+              <div className={styles['card-stack']}>
+                <Card content={
+                  <div className={styles['header']}></div>
 
-              } />
-              <Card content={
-                <h2>Test</h2>
-              } />
+                } />
+                <Card content={
+                  <h2>Test</h2>
+                } />
+              </div>
+            </div>
+            <h1 style={{ paddingTop: '3vh', paddingBottom: '2vh' }}>Recent Transactions</h1>
+            <div className={styles['layout']}>
+              <Transactions />
+              <div className={styles['card-stack']}></div>
             </div>
           </div>
-          <h2>Recent Transactions</h2>
-          <Transactions />
         </div>
       </div>
     </div>

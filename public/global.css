@@ -8,5 +8,14 @@ html {
 }
 
 #root {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.responsive-text {
+  font-size: 1.2vw;
+}
+
+h1 {
+  font-size: 2vw;
+  margin: 0;
 }
