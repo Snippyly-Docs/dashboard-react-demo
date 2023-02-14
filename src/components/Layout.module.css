@@ -5,10 +5,10 @@
   font-family: Poppins !important;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Poppins';
   src: url('../fonts/Poppins-Regular.ttf') format('truetype');
-}
+} */
 
 .navbar {
   width: 5.625vw;

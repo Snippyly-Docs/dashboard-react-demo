@@ -1,0 +1,53 @@
+.metrics-container {
+  flex-grow: 1;
+}
+
+.icon {
+  justify-self: flex-start;
+  background-color: #625DF5;
+  padding: 0.7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.icon > img {
+  height: 1vw;
+  width: 1vw;
+}
+
+.trend > img {
+  height: 1.5vw;
+}
+
+.metrics-header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.trend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trend-value {
+  margin-right: 0.5vw;
+}
+
+p {
+  margin: 0;
+  font-size: 1vw;
+}
+
+.label {
+  font-size: 0.8vw;
+  margin-bottom: 1vh;
+}
+
+.value, .trend-value {
+  font-weight: 600;
+}
