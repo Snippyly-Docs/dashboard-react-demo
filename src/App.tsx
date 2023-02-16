@@ -29,7 +29,7 @@ const App = () => {
     if (!client) return;
 
     client.identify(user);
-    client.setDocumentId('dashboard');
+    client.setDocumentId('dashboard-react-demo');
 
   }, [client]);
 
