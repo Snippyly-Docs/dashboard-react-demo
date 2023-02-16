@@ -3,14 +3,14 @@ import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
 
-import Layout from './components/Layout';
-import Toolbar from './components/Toolbar';
-import CardGrid from './components/CardGrid';
-import Section from './components/Section';
-import Card from './components/Card';
-import Chart from './components/Chart';
-import Table from './components/Table';
-import Metrics from './components/Metrics';
+import Layout from './components/layout/Layout';
+import Toolbar from './components/toolbar/Toolbar';
+import CardGrid from './components/card-grid/CardGrid';
+import Section from './components/section/Section';
+import Card from './components/card/Card';
+import Chart from './components/chart/Chart';
+import Table from './components/table/Table';
+import Metrics from './components/metrics/Metrics';
 
 import CalendarIcon from './icons/calendar.svg';
 import DownloadIcon from './icons/download.svg';
@@ -22,13 +22,14 @@ import SettingsIcon from './icons/settings.svg';
 const App = () => {
 
   const { client } = useSnippylyClient();
+  const user = generateUserData();
 
   useEffect(() => {
 
     if (!client) return;
 
-    const user = generateUserData();
     client.identify(user);
+    client.setDocumentId('dashboard');
 
   }, [client]);
 
@@ -37,7 +38,7 @@ const App = () => {
       navbar={
         <>
           <div className={styles['top-part']}>
-            <div className={styles['avatar']} />
+            <img src={user.photoUrl} className={styles['avatar']} />
             <img src={CalendarIcon} />
             <img src={DownloadIcon} />
             <img src={LightningIcon} />

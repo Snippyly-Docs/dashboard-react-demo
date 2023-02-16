@@ -1,6 +1,6 @@
 import styles from './Metrics.module.css';
-import GraphIcon from '../icons/graph.svg';
-import TrendIcon from '../icons/trend.svg';
+import GraphIcon from '../../icons/graph.svg';
+import TrendIcon from '../../icons/trend.svg';
 
 const Metrics = (props: any) => {
   return (
