@@ -5,7 +5,7 @@ import { SnippylyPresence, SnippylyHuddleTool } from '@snippyly/react';
 const Toolbar = () => {
   return (
     <div className={styles['toolbar']}>
-      <SnippylyHuddleTool />
+      <SnippylyHuddleTool type="all" />
       <SnippylyPresence containerClass={styles['presence']} />
     </div>
   );

@@ -8,6 +8,6 @@
   gap: 1.2vw;
 }
 
-.presence {
-  padding-top: 0.5vh !important;
+snippyly-presence {
+  margin-top: 0.5vh;
 }
