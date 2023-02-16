@@ -1,11 +1,12 @@
 import styles from './Toolbar.module.css';
 
-import { SnippylyPresence } from '@snippyly/react';
+import { SnippylyPresence, SnippylyHuddleTool } from '@snippyly/react';
 
 const Toolbar = () => {
   return (
     <div className={styles['toolbar']}>
-      <SnippylyPresence />
+      <SnippylyHuddleTool />
+      <SnippylyPresence containerClass={styles['presence']} />
     </div>
   );
 };

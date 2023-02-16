@@ -5,4 +5,9 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: 2.4vw;
+  gap: 1.2vw;
+}
+
+.presence {
+  padding-top: 0.5vh !important;
 }
