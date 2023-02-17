@@ -18,7 +18,7 @@ const App = () => {
 
   /**
    * Snippyly Code Example
-   * Identifying the user and setting the document ID.
+   * Initializes the Snippyly SDK.
    */
   const { client } = useSnippylyClient();
   const user = generateUserData();
