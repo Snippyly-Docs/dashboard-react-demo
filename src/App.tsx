@@ -3,6 +3,7 @@ import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
 
+import Navbar from "./components/navbar/Navbar";
 import Layout from './components/layout/Layout';
 import Toolbar from './components/toolbar/Toolbar';
 import CardGrid from './components/card-grid/CardGrid';
@@ -12,12 +13,6 @@ import Chart from './components/chart/Chart';
 import Table from './components/table/Table';
 import Metrics from './components/metrics/Metrics';
 
-import CalendarIcon from './icons/calendar.svg';
-import DownloadIcon from './icons/download.svg';
-import PieIcon from './icons/pie.svg';
-import ImgIcon from './icons/img.svg';
-import LightningIcon from './icons/lightning.svg';
-import SettingsIcon from './icons/settings.svg';
 
 const App = () => {
 
@@ -35,21 +30,7 @@ const App = () => {
 
   return (
     <Layout
-      navbar={
-        <>
-          <div className={styles['top-part']}>
-            <img src={user.photoUrl} className={styles['avatar']} />
-            <img src={CalendarIcon} />
-            <img src={DownloadIcon} />
-            <img src={LightningIcon} />
-            <img src={PieIcon} />
-            <img src={ImgIcon} />
-          </div>
-          <div className={styles['bottom-part']}>
-            <img src={SettingsIcon} />
-          </div>
-        </>
-      }
+      navbar={<Navbar user={user} />}
       content={
         <>
           <Toolbar />

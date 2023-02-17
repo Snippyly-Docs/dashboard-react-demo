@@ -4,7 +4,11 @@
   display: table;
 }
 
-.table > .header > th {
+thead {
+  height: 2vh;
+}
+
+.table > thead > .header > th {
   text-align: left;
 }
 
