@@ -16,6 +16,10 @@ import Metrics from './components/metrics/Metrics';
 
 const App = () => {
 
+  /**
+   * Snippyly Code Example
+   * Identifying the user and setting the document ID.
+   */
   const { client } = useSnippylyClient();
   const user = generateUserData();
 
