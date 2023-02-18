@@ -8,6 +8,8 @@ const Toolbar = () => {
       {/**
        * Snippyly Code Example
        * Adding the Huddle tool and Presence component to the application toolbar.
+       * Feature: Huddle
+       * Feature: Live Cursors
        */}
       <SnippylyHuddleTool type="all" />
       <SnippylyPresence containerClass={styles['presence']} />

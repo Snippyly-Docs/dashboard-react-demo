@@ -11,6 +11,8 @@ root.render(
     {/**
      * Snippyly Code Example
      * Code initialization for Huddle and Cursor features.
+     * Feature: Huddle
+     * Feature: Live Cursors
      */}
     <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
       <SnippylyHuddle />
