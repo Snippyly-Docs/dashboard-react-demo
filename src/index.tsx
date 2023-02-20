@@ -14,7 +14,7 @@ root.render(
      * Feature: Huddle -- Step #1
      * Feature: Live Cursors
      */}
-    <SnippylyProvider apiKey="K0klwhmHHauN8GMHDbch">
+    <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
       <SnippylyHuddle />
       <SnippylyCursor />
       <App />
