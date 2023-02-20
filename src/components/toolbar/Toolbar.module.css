@@ -12,3 +12,7 @@
 snippyly-presence {
   margin-top: 0.5vh;
 }
+
+snippyly-comment-tool, snippyly-tag-tool {
+  margin-top: 0.5vh;
+}

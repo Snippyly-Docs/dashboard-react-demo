@@ -7,6 +7,10 @@ This is an example Dashboard React app with **Snippyly SDK** features.
 * Presence
 * Live Cursors
 * Huddle
+* Tags
+* Comments
+* Comments Sidebar
+* Recorder
 
 ## Code Examples
 
