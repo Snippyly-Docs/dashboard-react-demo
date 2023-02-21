@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dashboard-react-demo/static/css/main.ffaa5cad.css",
-    "main.js": "/dashboard-react-demo/static/js/main.9e1e8feb.js",
+    "main.js": "/dashboard-react-demo/static/js/main.bc72a2a2.js",
     "static/media/calendar.svg": "/dashboard-react-demo/static/media/calendar.87c62dd97f4b6aacc6cb53e1bd609a54.svg",
     "static/media/settings.svg": "/dashboard-react-demo/static/media/settings.b232580e85dacdc73b10c635b13b9312.svg",
     "static/media/download.svg": "/dashboard-react-demo/static/media/download.79ce475ca5baf24e746523fbe0e5600d.svg",
@@ -12,10 +12,10 @@
     "static/media/img.svg": "/dashboard-react-demo/static/media/img.6cb7fd0d1838f9f0b87ca03505147ca9.svg",
     "static/media/trend.svg": "/dashboard-react-demo/static/media/trend.8e38e68dce8b591c1cc06dd037cf8a19.svg",
     "main.ffaa5cad.css.map": "/dashboard-react-demo/static/css/main.ffaa5cad.css.map",
-    "main.9e1e8feb.js.map": "/dashboard-react-demo/static/js/main.9e1e8feb.js.map"
+    "main.bc72a2a2.js.map": "/dashboard-react-demo/static/js/main.bc72a2a2.js.map"
   },
   "entrypoints": [
     "static/css/main.ffaa5cad.css",
-    "static/js/main.9e1e8feb.js"
+    "static/js/main.bc72a2a2.js"
   ]
 }
