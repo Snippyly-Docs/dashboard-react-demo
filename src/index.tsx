@@ -6,8 +6,7 @@ import { SnippylyProvider, SnippylyCursor, SnippylyHuddle } from '@snippyly/reac
 const rootContainer = document.getElementById('root');
 const root = createRoot(rootContainer as HTMLElement);
 root.render(
-  <React.StrictMode>
-
+  <>
     {/**
      * Snippyly Code Example
      * Code initialization for Huddle and Cursor features.
@@ -19,6 +18,5 @@ root.render(
       <SnippylyCursor />
       <App />
     </SnippylyProvider>
-
-  </React.StrictMode>
+  </>
 );
