@@ -36,7 +36,7 @@ const App = () => {
 
     if (!client) return;
 
-    client.getPresenceElement().getOnlineUsersOnCurrentDocument().subscribe(users => {
+    client.getPresenceElement().getOnlineUsersOnCurrentDocument().subscribe((users: any) => {
       if (users === null) return;
       if (users.length === 0) {
         const isDataReset = window.sessionStorage.getItem('_snippyly_demo_reset');
