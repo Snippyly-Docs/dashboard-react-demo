@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useSnippylyClient } from '@snippyly/react';
+import { useVeltClient } from '@veltdev/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
 
@@ -17,10 +17,10 @@ import Metrics from './components/metrics/Metrics';
 const App = () => {
 
   /**
-   * Snippyly Code Example
-   * Initializes the Snippyly SDK.
+   * Velt Code Example
+   * Initializes the Velt SDK.
    */
-  const { client } = useSnippylyClient();
+  const { client } = useVeltClient();
   const user = generateUserData();
 
   useEffect(() => {
